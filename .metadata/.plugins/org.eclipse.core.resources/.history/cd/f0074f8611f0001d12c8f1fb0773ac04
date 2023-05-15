@@ -1,0 +1,65 @@
+package rhkwp;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Phonelist{
+	ArrayList<Phonelist> numlist = new ArrayList<Phonelist>();
+	Scanner scan = new Scanner(System.in);	
+	private String name; // private 왜 캡슐화 시키는걸까? 어차피 여기서 쓰는데...
+	private String phone;
+	
+	public String getName() { // 소스에서 위쪽 2번 누르면 편하게 만들수잇는거 나옴
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public Phonelist() {// 디폴트 생성자 왜 넣을까? 이미 매개변수가 잇는걸 인자도 잇
+		
+	}
+	
+	public Phonelist(String name, String phone) { //이것도 소스에서 맨밑에서 두번쨰
+		this.name = name;
+		this.phone = phone;
+	}
+
+	@Override //소스에서 밑에 3번째  // 오버라이딩 아마... 입력하고싶은 글자를 자동으로 넣어지기위해?
+	public String toString() {
+		return "[이름 " + name + ", 폰번호 " + phone + "]";
+	}
+	public void input() {//보이드가 리턴 없는거임.
+		System.out.println("이름입력해주세요>>");
+		String name = scan.next();
+		System.out.println("폰번호를 입력해주세요>>");
+		String phone = scan.next();
+		numlist.add(new Phonelist(name,phone));
+		System.out.println("저장했습니다.");
+		
+	}
+	public void show() {
+		for(Phonelist tel : numlist) {
+			System.out.println(tel);
+		}
+	}
+	
+}
+public class java0511 {
+
+	public static void main(String[] args) {
+		Phonelist p = new Phonelist();
+		p.input();
+		p.show();
+
+	}
+
+}

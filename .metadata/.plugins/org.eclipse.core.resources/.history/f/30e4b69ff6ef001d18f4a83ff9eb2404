@@ -1,0 +1,23 @@
+package rhkwp01;
+
+import java.util.Scanner;
+
+public class phonelist {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("이름과 폰번호를 입력해주세요(폰번호 입력시 '-' 붙어서 넣어주세요) >> ");
+		String name = scan.next();
+		int phonenum = scan.nextInt();
+		
+		//ArrayList<Saram> saramList = new ArrayList<Saram>();//넣어야한다길래 넣엇습니다.
+		
+		
+
+//        String[] regions = {"부산", "서울", "경기", "인천", "대구", "광주", "대전", "제주", "경남", "경북", "전북", "전남", "강원", "세종"};
+//        System.out.print("주소록에 몇 명을 저장하시겠습니까>> ");
+//        int numSarams = sc.nextInt();
+
+	}
+
+}

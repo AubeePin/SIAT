@@ -1,0 +1,37 @@
+package rhkwp01;
+import java.util.Scanner;
+
+
+// 목표  : 이름(name)과 전화번호(phone) 입력한후에 이름을 입력해서 검색할수있게 만들것.
+class Saram{
+	Scanner scan = new Scanner(System.in);
+	String name;
+	int no;
+	String phone;
+	Saram Sarams[];
+
+	public Saram(String name, String phone) {
+		this.name = name;
+		this.phone = phone;
+	}	
+
+	public void getList() {
+		
+	    for(int i = 0; i < no; i++){
+	        System.out.print("이름과 전화번호(이름과 번호는 빈 칸입력)>> ");
+	        name = scan.next();
+	        phone = scan.next();
+	        Sarams[i] = new Saram(name, phone);
+	    }
+	    System.out.println("저장했습니다.");
+	}
+}	
+	
+public class phonelist {
+	public static void main(String[] args) {
+		Saram p = new Saram(null, 0);
+		p.getList();
+	}
+}
+
+	

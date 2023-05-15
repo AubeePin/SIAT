@@ -1,0 +1,49 @@
+package rhkwp01;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class phonelist {
+	Scanner scan = new Scanner(System.in);
+	
+   public static void main(String[] args) {
+	  
+	  HashMap<String, Object> map1 = new HashMap<String, Object>();
+      map1.put("김범준", "010-1111-1111");
+      HashMap<String, Object> map2 = new HashMap<String, Object>();
+      map2.put("박일순", "010-2222-2222");
+      HashMap<String, Object> map3 = new HashMap<String, Object>();
+      map3.put("최승현", "010-3333-3333");
+      HashMap<String, Object> map4 = new HashMap<String, Object>();
+      map4.put("서민경", "010-4444-4444");
+      HashMap<String, Object> map5 = new HashMap<String, Object>();
+      map5.put("최준석", "010-5555-5555");
+      HashMap<String, Object> map6 = new HashMap<String, Object>();
+      map6.put("권동우", "010-6666-6666");
+      HashMap<String, Object> map7 = new HashMap<String, Object>();
+      map7.put("안준원", "010-7777-7777");
+      HashMap<String, Object> map8 = new HashMap<String, Object>();
+      map8.put("임명철", "010-8888-8888");
+      HashMap<String, Object> map9 = new HashMap<String, Object>();
+      map9.put("서형원", "010-9999-9999");
+      HashMap<String, Object> map10 = new HashMap<String, Object>();
+      map10.put("김은우", "010-1010-1010");
+      HashMap<String, Object> map11 = new HashMap<String, Object>();
+      map11.put("이나라", "010-1100-0011");
+      HashMap<String, Object> map12 = new HashMap<String, Object>();
+      map12.put("김재훈", "010-1212-1212");
+      
+      
+      ArrayList<HashMap<String, Object>> list = new ArrayList<HashMap<String,Object>>();
+      list.add(map);
+     System.out.println(map);
+      
+     
+
+   } // 그중에하나만 뽑아오게 하는건 어려울까?
+
+}
+	

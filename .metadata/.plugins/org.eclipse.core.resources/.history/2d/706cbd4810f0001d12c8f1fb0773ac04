@@ -1,0 +1,44 @@
+package rhkwp;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Phonelist{
+	ArrayList<Phonelist> numlist = new ArrayList<Phonelist>();
+	Scanner scan = new Scanner(System.in);	
+	private String name; // private 왜 캡슐화 시키는걸까? 어차피 여기서 쓰는데...
+	private String phone;
+	
+	public String getName() { // 소스에서 위쪽 2번 누르면 편하게 만들수잇는거 나옴
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public Phonelist(String name, String phone) { //이것도 소스에서 맨밑에서 두번쨰
+		`
+		+
+		this.name = name;
+		this.phone = phone;
+	}
+	
+	
+}
+public class java0511 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package rhkwp01;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+// 목표  : 이름(name)과 전화번호(phone) 입력한후에 내가 원하는 숫자(no)를 검색할수있게 만들것.
+class Saram{
+	Scanner scan = new Scanner(System.in);
+	String name;
+	int no;
+	int phone;
+	
+	public Saram(String name, int phone) {
+		this.name =name;
+		this.no = no;
+		this.phone=phone;
+	}
+}
+public void get() {
+    for(int i = 0; i < num; i++){
+        System.out.print("이름과 전화번호(이름과 번호는 빈 칸입력)>> ");
+        name = scan.next();
+        phone = scan.next();
+        phone1[i] = new Phone1(name, phone);
+    }
+    System.out.println(">> 저장되었습니다...");
+}
+public class phonelist {
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+}
+
+	
